@@ -1,0 +1,105 @@
+/* --- Styles specific to about.html --- */
+
+/* Section: Types d'IA */
+.ai-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+.type-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    border-left: 5px solid var(--secondary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px var(--shadow-color-hover);
+}
+
+.type-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem; /* Slightly larger heading */
+}
+body.dark-mode .type-card h3 {
+     color: var(--secondary-color);
+}
+
+.type-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+
+/* Section: Pionniers et Visionnaires */
+.key-figures {
+    margin-top: 3rem;
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+.key-figures h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+}
+
+.figures-grid {
+    display: grid;
+    /* Start with 3 columns, adjust minmax for flexibility */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.figure-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure image radius is respected */
+}
+
+.figure-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px var(--shadow-color-hover);
+}
+
+.figure-card img {
+    width: 120px; /* Control image size */
+    height: 120px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Ensure image covers the area well */
+    margin-bottom: 1rem;
+    border: 3px solid var(--border-color);
+    background-color: var(--light-bg); /* Background for images that might have transparency */
+}
+body.dark-mode .figure-card img {
+    border-color: var(--accent-color);
+}
+
+
+.figure-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+body.dark-mode .figure-card h3 {
+     color: var(--secondary-color);
+}
+
+.figure-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-color-secondary); /* Slightly lighter text */
+    margin-bottom: 0;
+} 

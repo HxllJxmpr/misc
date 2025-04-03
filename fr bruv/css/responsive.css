@@ -1,0 +1,305 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    :root {
+        /* Slightly smaller base font size for tablets */
+        --font-size-base: 15px;
+    }
+
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.8rem 1rem; /* Adjust padding */
+    }
+
+    .logo h1 {
+        font-size: 1.6rem; /* Slightly smaller logo */
+        margin-bottom: 0; /* Remove bottom margin if hamburger is next to it */
+    }
+
+    .header-controls {
+        position: absolute; /* Position controls top right */
+        top: 1rem;
+        right: 4.5rem; /* Space left for hamburger */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger */
+        position: absolute;
+        top: 0.8rem;
+        right: 1rem;
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--card-bg); /* Give menu a background */
+        position: absolute;
+        top: 100%; /* Position below header */
+        left: 0;
+        z-index: 100;
+        padding: 1rem 0;
+        box-shadow: 0 5px 15px var(--shadow-color);
+        border-top: 1px solid var(--border-color);
+        max-height: calc(100vh - 60px); /* Limit height and allow scroll */
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 1rem 1.5rem;
+        display: block; /* Make links full width */
+        border-bottom: 1px solid var(--border-color-light);
+        width: 100%;
+        transition: background-color 0.2s ease;
+    }
+    .nav-links li:last-child a {
+        border-bottom: none;
+    }
+    .nav-links li a:hover,
+    .nav-links li a:focus {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    body.dark-mode .nav-links li a:hover,
+    body.dark-mode .nav-links li a:focus {
+         background-color: rgba(255, 255, 255, 0.08);
+    }
+    /* Remove hover background on active link */
+     .nav-links li a[aria-current="page"]:hover {
+        background-color: transparent;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .features,
+    .applications-grid,
+    .figures-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Allow more flexible wrapping */
+        gap: 1.5rem; /* Reduce gap */
+    }
+
+    .content-section,
+    .page-header,
+    .timeline,
+    .resource-category,
+    .glossary-section,
+    .case-studies {
+        padding: 1.5rem 1rem; /* Reduce padding */
+    }
+
+    .timeline::before {
+        left: 20px; /* Adjust timeline line position */
+    }
+    .timeline-item {
+        padding-left: 50px; /* Adjust item padding */
+        padding-right: 10px;
+    }
+    .timeline-item::before {
+        left: 12px; /* Adjust dot position */
+    }
+
+    .application-card .card-image img {
+        max-height: 180px; /* Limit image height */
+    }
+
+    .ethical-issue .inline-image {
+        float: none; /* Stack image on smaller screens */
+        display: block;
+        margin: 1.5rem auto;
+        max-width: 80%;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #scroll-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* About Page Specific Adjustments */
+    .ai-types {
+        /* Already uses auto-fit, might not need changes here unless gap/padding needs adjustment */
+        gap: 1rem;
+        padding: 0 0.8rem;
+    }
+    .type-card {
+        padding: 1.2rem;
+    }
+    .type-card h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .key-figures {
+        padding: 0 0.8rem;
+    }
+    .figures-grid {
+        /* Ensure it adapts, maybe 2 columns here */
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+    .figure-card {
+        padding: 1rem 0.8rem;
+    }
+     .figure-card img {
+        width: 100px;
+        height: 100px;
+    }
+     .figure-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile (Portrait) */
+@media (max-width: 480px) {
+    :root {
+        /* Further reduce base font size for small mobiles */
+        --font-size-base: 14px;
+    }
+
+    h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features,
+    .applications-grid,
+    .figures-grid,
+    .ai-types { /* Ensure ai-types also stacks */
+        grid-template-columns: 1fr; /* Stack elements in a single column */
+        gap: 1.2rem;
+    }
+
+    .feature-card,
+    .application-card,
+    .figure-card,
+    .type-card,
+    .ethical-issue,
+    .glossary-entry {
+        padding: 1rem; /* Reduce card padding */
+    }
+
+    .button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    .cta-section div {
+        display: flex;
+        flex-direction: column; /* Stack CTA buttons */
+        gap: 0.8rem;
+        align-items: center;
+    }
+     .cta-section .button-secondary {
+        margin-left: 0; /* Remove margin when stacked */
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+    .timeline-item {
+        padding-left: 40px;
+    }
+    .timeline-item::before {
+        left: 8px;
+        width: 14px; /* Slightly smaller dot */
+        height: 14px;
+    }
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .key-figures h2 {
+        font-size: 1.6rem; /* Match other h2 */
+    }
+
+    #glossary-filter {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .glossary-entry dt {
+        font-size: 1.1rem;
+    }
+     .glossary-entry dd {
+        font-size: 0.9rem;
+    }
+
+    #scroll-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    /* About Page Specific Adjustments */
+    .ai-types,
+    .figures-grid {
+        /* Force single column */
+        grid-template-columns: 1fr;
+        gap: 1rem; /* Consistent gap */
+    }
+    .type-card,
+    .figure-card {
+        padding: 1rem; /* Consistent padding */
+    }
+     .figure-card img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-nav {
+        padding: 0 1.5rem;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .applications-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Larger Desktop Styles */
+@media (min-width: 1300px) {
+    main {
+        padding: 0;
+    }
+} 
