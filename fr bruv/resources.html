@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources IA - Centre de Connaissances Complet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Explorez notre collection organisée de ressources sur l'intelligence artificielle : cours interactifs, blogs spécialisés, institut de recherche et lectures essentielles pour tous niveaux.">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" role="navigation">
+            <div class="logo"><h1><a href="index.html">IA Project</a></h1></div>
+            <button class="hamburger" id="hamburger-button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="ethics.html">Éthique</a></li>
+                <li><a href="resources.html">Ressources</a></li>
+                <li><a href="glossary.html">Glossaire</a></li>
+            </ul>
+            <div class="header-controls"></div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="page-header">
+            <h1>Centre de Ressources IA</h1>
+            <p class="subtitle">Une collection soigneusement organisée pour approfondir vos connaissances</p>
+        </section>
+
+        <!-- Resource Filtering -->
+        <section class="resource-controls">
+            <div class="search-container">
+                <input type="text" id="resource-filter" placeholder="Rechercher par mot-clé..." aria-label="Filtrer les ressources">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tout</button>
+                    <button class="filter-btn" data-filter="courses">Cours</button>
+                    <button class="filter-btn" data-filter="blogs">Blogs</button>
+                    <button class="filter-btn" data-filter="orgs">Organisations</button>
+                    <button class="filter-btn" data-filter="books">Livres</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Resources -->
+        <section class="featured-resources" id="featured">
+            <h2><span class="icon">⭐</span> Ressources Recommandées</h2>
+            <div class="resource-cards">
+                <div class="resource-card featured" data-category="courses">
+                    <div class="card-badge">Populaire</div>
+                    <div class="card-header">
+                        <h3>Elements of AI</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty beginner">Débutant</span>
+                            <span class="language">FR/EN</span>
+                            <span class="cost free">Gratuit</span>
+                        </span>
+                    </div>
+                    <p>Une introduction accessible aux concepts de base de l'IA, créée par l'Université de Helsinki.</p>
+                    <div class="card-footer">
+                        <a href="https://www.elementsofai.com/" class="button button-secondary" target="_blank" rel="noopener noreferrer">Accéder <span class="icon">→</span></a>
+                    </div>
+                </div>
+
+                <div class="resource-card featured" data-category="books">
+                    <div class="card-badge">Essentiel</div>
+                    <div class="card-header">
+                        <h3>AI Superpowers</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                            <span class="cost paid">Payant</span>
+                        </span>
+                    </div>
+                    <p>Une analyse perspicace par Kai-Fu Lee sur la course à l'IA entre la Chine et les États-Unis.</p>
+                    <div class="card-footer">
+                        <a href="https://www.aisuperpowers.com/" class="button button-secondary" target="_blank" rel="noopener noreferrer">En savoir plus <span class="icon">→</span></a>
+                    </div>
+                </div>
+
+                <div class="resource-card featured" data-category="blogs">
+                    <div class="card-badge">Actualité</div>
+                    <div class="card-header">
+                        <h3>DeepMind Blog</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                            <span class="cost free">Gratuit</span>
+                        </span>
+                    </div>
+                    <p>Découvrez les dernières avancées et recherches de l'une des organisations d'IA les plus innovantes.</p>
+                    <div class="card-footer">
+                        <a href="https://deepmind.com/blog" class="button button-secondary" target="_blank" rel="noopener noreferrer">Visiter <span class="icon">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses -->
+        <section class="resource-category" id="courses" data-category="courses">
+            <h2><span class="icon">🎓</span> Cours & Formations</h2>
+            <p class="category-description">Des formations structurées pour tous niveaux, des plus accessibles aux plus avancées :</p>
+            
+            <div class="resource-list">
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Fast.ai - Practical Deep Learning</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                            <span class="cost free">Gratuit</span>
+                        </span>
+                        <p>Approche pratique pour apprendre le deep learning avec des applications concrètes.</p>
+                    </div>
+                    <a href="https://www.fast.ai/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Accéder</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Coursera - Machine Learning</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN/FR</span>
+                            <span class="cost freemium">Freemium</span>
+                        </span>
+                        <p>Le célèbre cours d'Andrew Ng sur les fondamentaux du machine learning.</p>
+                    </div>
+                    <a href="https://www.coursera.org/learn/machine-learning" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Accéder</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Class Central - Best AI Courses</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty various">Tous niveaux</span>
+                            <span class="language">EN/FR</span>
+                            <span class="cost various">Divers</span>
+                        </span>
+                        <p>Une sélection organisée des meilleurs cours d'IA disponibles en ligne.</p>
+                    </div>
+                    <a href="https://www.classcentral.com/subject/ai" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Accéder</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>France Université Numérique - Introduction à l'IA</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty beginner">Débutant</span>
+                            <span class="language">FR</span>
+                            <span class="cost free">Gratuit</span>
+                        </span>
+                        <p>MOOC d'introduction à l'IA disponible en français, créé par des universités françaises.</p>
+                    </div>
+                    <a href="https://www.fun-mooc.fr/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Accéder</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section class="resource-category" id="blogs" data-category="blogs">
+            <h2><span class="icon">📰</span> Blogs & Actualités</h2>
+            <p class="category-description">Restez à jour avec les dernières avancées et tendances :</p>
+            
+            <div class="resource-list">
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Blog OpenAI</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                        </span>
+                        <p>Les coulisses des créateurs de ChatGPT et DALL-E avec des articles sur leurs recherches.</p>
+                    </div>
+                    <a href="https://openai.com/blog/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Google AI Blog</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                        </span>
+                        <p>Les recherches et innovations IA de Google, expliquées par leurs chercheurs.</p>
+                    </div>
+                    <a href="https://ai.googleblog.com/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>MIT Technology Review (IA)</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                            <span class="cost freemium">Freemium</span>
+                        </span>
+                        <p>Journalisme technologique de pointe sur l'IA et ses implications sociétales.</p>
+                    </div>
+                    <a href="https://www.technologyreview.com/topic/artificial-intelligence/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>ActuIA</h3>
+                        <span class="resource-meta">
+                            <span class="difficulty beginner">Accessible</span>
+                            <span class="language">FR</span>
+                        </span>
+                        <p>Le portail francophone de référence sur l'actualité de l'IA et ses applications.</p>
+                    </div>
+                    <a href="https://www.actuia.com/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizations -->
+        <section class="resource-category" id="orgs" data-category="orgs">
+            <h2><span class="icon">🏛️</span> Organisations & Instituts</h2>
+            <p class="category-description">Les acteurs clés de la recherche et du développement :</p>
+            
+            <div class="resource-list">
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Inria (France)</h3>
+                        <p>L'institut national français dédié aux sciences du numérique et à la recherche en IA.</p>
+                    </div>
+                    <a href="https://www.inria.fr/fr/intelligence-artificielle" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>Mila (Québec)</h3>
+                        <p>Un écosystème de recherche en IA de renommée mondiale, dirigé par Yoshua Bengio.</p>
+                    </div>
+                    <a href="https://mila.quebec/fr/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>AAAI</h3>
+                        <p>Association internationale pour l'avancement de l'intelligence artificielle.</p>
+                    </div>
+                    <a href="https://www.aaai.org/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="resource-item">
+                    <div class="resource-info">
+                        <h3>AI for Humanity (France)</h3>
+                        <p>La stratégie nationale française pour l'intelligence artificielle.</p>
+                    </div>
+                    <a href="https://www.aiforhumanity.fr/" class="resource-link" target="_blank" rel="noopener noreferrer">
+                        <span class="link-text">Visiter</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books -->
+        <section class="resource-category" id="books" data-category="books">
+            <h2><span class="icon">📚</span> Lectures Essentielles</h2>
+            <p class="category-description">Ouvrages de référence pour approfondir vos connaissances :</p>
+            
+            <div class="resource-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/book-ai.jpg" alt="Couverture du livre Intelligence Artificielle" class="book-image">
+                    </div>
+                    <div class="book-info">
+                        <h3>"Intelligence Artificielle"</h3>
+                        <p class="book-author">Stuart Russell & Peter Norvig</p>
+                        <p class="book-description">La "bible" académique du domaine, couvrant toutes les bases théoriques et pratiques de l'IA.</p>
+                        <span class="resource-meta">
+                            <span class="difficulty advanced">Avancé</span>
+                            <span class="language">EN/FR</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/book-superintelligence.jpg" alt="Couverture du livre Superintelligence" class="book-image">
+                    </div>
+                    <div class="book-info">
+                        <h3>"Superintelligence"</h3>
+                        <p class="book-author">Nick Bostrom</p>
+                        <p class="book-description">Une réflexion profonde sur les futurs possibles de l'IA et les risques d'une superintelligence.</p>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN/FR</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/book-revolution.jpg" alt="Couverture du livre La Révolution de l'IA" class="book-image">
+                    </div>
+                    <div class="book-info">
+                        <h3>"La Révolution de l'Intelligence Artificielle"</h3>
+                        <p class="book-author">Luc Julia</p>
+                        <p class="book-description">Une vue d'ensemble accessible par l'un des créateurs de Siri. Démystifie l'IA pour le grand public.</p>
+                        <span class="resource-meta">
+                            <span class="difficulty beginner">Débutant</span>
+                            <span class="language">FR</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/images/book-human.jpg" alt="Couverture du livre Human Compatible" class="book-image">
+                    </div>
+                    <div class="book-info">
+                        <h3>"Human Compatible"</h3>
+                        <p class="book-author">Stuart Russell</p>
+                        <p class="book-description">Exploration des moyens de concevoir des IA bénéfiques et alignées avec les valeurs humaines.</p>
+                        <span class="resource-meta">
+                            <span class="difficulty intermediate">Intermédiaire</span>
+                            <span class="language">EN</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section">
+            <h2>Communauté & Partage</h2>
+            <p>Vous connaissez une ressource de qualité qui n'est pas mentionnée ici? N'hésitez pas à nous la suggérer !</p>
+            <a href="mailto:contact@iaproject.fr" class="button button-primary">Suggérer une ressource</a>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2024 - IA Project - Une exploration de l'Intelligence Artificielle</p>
+    </footer>
+
+    <button id="scroll-to-top" title="Remonter en haut" aria-label="Remonter en haut">↑</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/resources.js"></script>
+</body>
+</html> 

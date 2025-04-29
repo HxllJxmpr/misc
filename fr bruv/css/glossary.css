@@ -1,0 +1,60 @@
+.glossary-section {
+    padding: 1rem;
+}
+
+#glossary-filter {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#glossary-filter:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+#glossary-list {
+    margin-top: 1rem;
+}
+
+.glossary-entry {
+    background-color: var(--card-bg);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px var(--shadow-color);
+    border-left: 4px solid var(--secondary-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+body.dark-mode .glossary-entry {
+    border-left-color: var(--accent-color);
+}
+
+
+.glossary-entry dt { /* Term */
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+body.dark-mode .glossary-entry dt {
+    color: var(--secondary-color);
+}
+
+.glossary-entry dd { /* Definition */
+    margin-left: 0; /* Reset default dl margin */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Style for filtered out items */
+.glossary-entry.hidden {
+    display: none;
+} 

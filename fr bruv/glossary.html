@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire IA - Comprendre le Vocabulaire de l'IA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/glossary.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Un glossaire définissant les termes techniques et concepts clés fréquemment rencontrés dans le domaine de l'intelligence artificielle.">
+</head>
+<body>
+    <header>
+        <nav class="main-nav" role="navigation">
+            <div class="logo">
+                <h1><a href="index.html">IA Project</a></h1>
+            </div>
+            <button class="hamburger" id="hamburger-button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="ethics.html">Éthique</a></li>
+                <li><a href="resources.html">Ressources</a></li>
+                <li><a href="glossary.html">Glossaire</a></li>
+            </ul>
+            <div class="header-controls">
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="page-header">
+            <h1>Le Langage de l'IA : Glossaire Essentiel</h1>
+            <p class="subtitle">Décodez les termes techniques pour mieux comprendre l'intelligence artificielle</p>
+        </section>
+
+        <section class="glossary-section">
+            <input type="text" id="glossary-filter" placeholder="Rechercher un terme..." aria-label="Filtrer les termes du glossaire">
+            <dl id="glossary-list">
+                <div class="glossary-entry">
+                    <dt>Algorithme</dt>
+                    <dd>Une procédure étape par étape, un ensemble de règles ou d'instructions précises utilisées pour résoudre un problème ou accomplir une tâche.</dd>
+                </div>
+                <div class="glossary-entry">
+                    <dt>Apprentissage Automatique (Machine Learning)</dt>
+                    <dd>Capacité d'un système informatique à apprendre et à s'améliorer à partir de données d'expérience, sans être explicitement programmé pour chaque tâche.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Apprentissage Profond (Deep Learning)</dt>
+                    <dd>Sous-domaine de l'apprentissage automatique utilisant des réseaux neuronaux artificiels à multiples couches pour analyser des données complexes (images, texte, son).</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Apprentissage Supervisé</dt>
+                    <dd>Méthode où l'IA apprend en comparant ses prédictions à des exemples déjà étiquetés avec la "bonne réponse".</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Apprentissage Non Supervisé</dt>
+                    <dd>Méthode où l'IA explore des données sans étiquettes pour découvrir elle-même des structures, des groupes ou des motifs cachés.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Apprentissage par Renforcement</dt>
+                    <dd>Méthode où l'IA apprend par essais et erreurs, en recevant des récompenses ou des pénalités pour ses actions dans un environnement donné.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Biais Algorithmique</dt>
+                    <dd>Tendance systématique d'un algorithme à produire des résultats favorisant injustement certains groupes ou caractéristiques, souvent dû à des données d'entraînement biaisées.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Big Data</dt>
+                    <dd>Très grands volumes de données (structurées ou non) générés rapidement, dont l'analyse nécessite des outils spécifiques pour en extraire de la valeur.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Chatbot (Agent Conversationnel)</dt>
+                    <dd>Programme conçu pour simuler une conversation humaine, utilisé pour l'assistance, l'information ou le divertissement.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>IA Générative</dt>
+                    <dd>Type d'IA capable de créer de nouveaux contenus (textes, images, sons, code) originaux et cohérents, souvent basés sur des modèles comme les Transformers (ex: GPT-4).</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Intelligence Artificielle Générale (AGI)</dt>
+                    <dd>Niveau d'IA (encore théorique) qui posséderait des capacités cognitives équivalentes à celles d'un humain dans tous les domaines intellectuels.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Réseau Neuronal Artificiel</dt>
+                    <dd>Modèle mathématique inspiré du cerveau humain, composé de "neurones" interconnectés en couches, utilisé notamment en Deep Learning.</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Traitement du Langage Naturel (NLP / TAL)</dt>
+                    <dd>Domaine de l'IA permettant aux machines de comprendre, interpréter, générer et interagir avec le langage humain (écrit ou parlé).</dd>
+                </div>
+                 <div class="glossary-entry">
+                    <dt>Vision par Ordinateur (Computer Vision)</dt>
+                    <dd>Domaine de l'IA permettant aux machines "d'interpréter" et d'analyser des informations visuelles provenant d'images ou de vidéos.</dd>
+                </div>
+            </dl>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2024 - IA Project - Une exploration de l'Intelligence Artificielle</p>
+    </footer>
+
+    <button id="scroll-to-top" title="Remonter en haut" aria-label="Remonter en haut">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
